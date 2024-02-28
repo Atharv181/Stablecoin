@@ -5,7 +5,6 @@ import {ERC20Burnable, ERC20} from "@openzeppelin/contracts/token/ERC20/extensio
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract DecentralizedStableCoin  is ERC20Burnable, Ownable{
-    uint256 public constant DECIMALS = 18;
 
     error DecentralizedStableCoin__MustBeGreaterThanZero(); 
     error DecentralizedStableCoin__BurnAmountExceedsBalance();
